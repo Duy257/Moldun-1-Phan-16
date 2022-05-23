@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let Circle = function(radius) {
+            this.radius = radius;
+            //xây dựng phương thức trả về bán kính hình tròn
+            this.getRadius = function() {
+                return radius;
+            };
+            //phương thức tính bán kính hình tròn
+            this.getArea = function() {
+                return Math.PI * radius * radius;
+            }
+        }
+        let tron = new Circle(2);
+        let radius = tron.getRadius();
+        let Area = tron.getArea();
+        alert(`hình tròn có bán kính là ${radius} = ${Area}` )
+    </script>
+</body>
+</html>
